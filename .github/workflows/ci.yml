@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+      - name: github-bootstrap tests
+        run: python -m unittest discover -s skills/github-bootstrap/tests -v
+      - name: github-continuity tests
+        run: python -m unittest discover -s skills/github-continuity/tests -v
+      - name: Release manifest tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate continuity manifest
+        run: python skills/github-continuity/scripts/context.py validate --root .
+      - name: Verify release manifest and SHA-256 file hashes
+        run: |
+          manifest_dir="$(mktemp -d)"
+          python scripts/release_manifest.py --repo-root . --ref refs/tags/v1.0.0 --output "$manifest_dir/generated.json"
+          cmp SKILL_MANIFEST.json "$manifest_dir/generated.json"
+          python skills/github-bootstrap/scripts/install.py --repo-root . --manifest SKILL_MANIFEST.json --expected-ref refs/tags/v1.0.0 --dest "$manifest_dir/installed"
+      - name: Scan full Git history for secrets
+        run: python skills/github-continuity/scripts/security.py --root . --history

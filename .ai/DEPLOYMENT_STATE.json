@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "NOT_APPLICABLE",
+  "test": "NOT_APPLICABLE",
+  "production": "NOT_APPLICABLE",
+  "last_verified": "NOT_RUN",
+  "publication": {
+    "target": "jize0602/agent-skills",
+    "visibility_requested": "public",
+    "status": "NOT_PUBLISHED",
+    "remote_status": "PUBLIC_REPOSITORY_EXISTS_SOURCE_PENDING",
+    "integration_acceptance": "PENDING"
+  },
+  "note": "This is a source-only Skills repository; no runtime deployment was performed or authorized. Formal Skill release is pending."
+}

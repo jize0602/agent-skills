@@ -1,0 +1,6 @@
+interface:
+  display_name: "GitHub 项目接续"
+  short_description: "用读取、同步、备份三个动作保存项目事实，支持私有初始化、接手与灾备恢复"
+  default_prompt: "使用 $github-continuity 识别当前项目和仓库，按用户指定的读取、同步或备份动作完成验证闭环。"
+policy:
+  allow_implicit_invocation: true

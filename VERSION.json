@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "repository": "jize0602/agent-skills",
+  "visibility_target": "public",
+  "publication_status": "CANDIDATE_LOCAL_PASS",
+  "repository_readback": {
+    "id": 1383044358,
+    "visibility": "PUBLIC",
+    "initial_commit": "380fca3bf495c4739a2ffff6ac483f507ad9fc60",
+    "source": "Main Agent GitHub connector readback"
+  },
+  "integration_acceptance": "PENDING",
+  "skills": [
+    {
+      "name": "github-bootstrap",
+      "version": "1.0.0",
+      "path": "skills/github-bootstrap",
+      "publication_status": "CANDIDATE_LOCAL_PASS",
+      "test_status": "34_PASS_LOCAL"
+    },
+    {
+      "name": "github-continuity",
+      "version": "1.0.0",
+      "path": "skills/github-continuity",
+      "publication_status": "CANDIDATE_LOCAL_PASS",
+      "test_status": "61_PASS_LOCAL"
+    }
+  ],
+  "internal_project_skill": ".ai/skills/agent-skills-project/SKILL.md",
+  "checks": {
+    "local_continuity_manifest_validation": "VALID",
+    "ci": "NOT_RUN",
+    "github_bootstrap_tests": "34_PASS_LOCAL",
+    "github_continuity_tests": "61_PASS_LOCAL",
+    "release_manifest_tests": "6_PASS_LOCAL",
+    "continuity_manifest": "PASS_LOCAL",
+    "release_manifest_hash_verification": "PENDING_FINAL_COMPARE",
+    "history_secret_scan": "PENDING_INITIAL_COMMIT",
+    "e2e": "NOT_RUN"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "project": "agent-skills",
+  "status": "PUBLIC_CANDIDATE_LOCAL_PASS",
+  "repository": "jize0602/agent-skills",
+  "branch": "main",
+  "visibility_target": "public",
+  "remote_status": "PUBLIC_REPOSITORY_EXISTS_SOURCE_PENDING",
+  "integration_acceptance": "PENDING",
+  "continuity_contract": ".ai/CONTINUITY.json",
+  "skills": [
+    {
+      "name": "github-bootstrap",
+      "version": "1.0.0",
+      "publication_status": "CANDIDATE",
+      "test_status": "34_PASS_LOCAL"
+    },
+    {
+      "name": "github-continuity",
+      "version": "1.0.0",
+      "publication_status": "CANDIDATE",
+      "test_status": "61_PASS_LOCAL"
+    }
+  ],
+  "tracking": {
+    "requirements": ".ai/REQUIREMENTS.md",
+    "implementation": ".ai/IMPLEMENTATION.md"
+  },
+  "tests": {
+    "status": "LOCAL_PASS_REMOTE_PENDING",
+    "commands": [
+      "python3 -m unittest discover -s skills/github-bootstrap/tests -v",
+      "python3 -m unittest discover -s skills/github-continuity/tests -v",
+      "python3 -m unittest discover -s tests -v"
+    ]
+  },
+  "deployment": {
+    "status": "NOT_APPLICABLE"
+  },
+  "next_action": "Publish reviewed source to the existing Public repository, verify exact CI/readback, then release, clean-install, independently resume and back up."
+}

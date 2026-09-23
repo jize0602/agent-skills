@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "repository": "jize0602/agent-skills",
+  "ref": "refs/tags/v1.0.0",
+  "skills": [
+    {
+      "name": "github-bootstrap",
+      "version": "1.0.0",
+      "files": [
+        {
+          "path": "skills/github-bootstrap/SKILL.md",
+          "sha256": "7f6f9f4e1050ae5a71135c86c0d3dcd1bb6cc80be99ba4bd5484a28e3c9d04c3"
+        },
+        {
+          "path": "skills/github-bootstrap/scripts/auth.py",
+          "sha256": "6213697f7e0d1952b9b3f8fa3de907a34788880f4e3a12e70d63512d8caae022"
+        },
+        {
+          "path": "skills/github-bootstrap/scripts/install.py",
+          "sha256": "c91bf12afd67635e27d3969e8a7bcdf7f93617ae138851b85e8d0611501f2dd9"
+        },
+        {
+          "path": "skills/github-bootstrap/tests/test_auth.py",
+          "sha256": "9b46c071df5296587525476eef6b0071b16be238bf1c5b136a4a9800db1145a0"
+        },
+        {
+          "path": "skills/github-bootstrap/tests/test_install.py",
+          "sha256": "bc0be39659f3297b898df5f23c62d26c3499700a3f160d65290e99b4903431a8"
+        }
+      ]
+    },
+    {
+      "name": "github-continuity",
+      "version": "1.0.0",
+      "files": [
+        {
+          "path": "skills/github-continuity/SKILL.md",
+          "sha256": "d1fbdeb5ef2dc75908d3d48b10e015df9e4deba4e5f76513ffde4c4e28bc0f2a"
+        },
+        {
+          "path": "skills/github-continuity/agents/openai.yaml",
+          "sha256": "4ebcb3c8c646edfda7fb924d2f617afedcb396f7f3a607a9b35e114433dd6c74"
+        },
+        {
+          "path": "skills/github-continuity/references/operations.md",
+          "sha256": "89890c978b8b69bb0888823f218dac23efbc0ca3ba34a925bad6ff2263e7300b"
+        },
+        {
+          "path": "skills/github-continuity/references/repository-contract.md",
+          "sha256": "40c014ff90eedc966fdd7b172a0291565e9f3fb9da791f2131efc82875988ef8"
+        },
+        {
+          "path": "skills/github-continuity/scripts/backup.py",
+          "sha256": "44c47e1da8f4f009bd7574a0686c5fb21bef124ba304da402670688ae88f4442"
+        },
+        {
+          "path": "skills/github-continuity/scripts/context.py",
+          "sha256": "a4e4dd3d1ac9f5cf2bb19e1c1e62a892b40bf52f570006c041a3be43638794d9"
+        },
+        {
+          "path": "skills/github-continuity/scripts/security.py",
+          "sha256": "e5e2fc550fa218ad3648080dad40c946d2903f9366f282a7fc94abec936f7e4a"
+        },
+        {
+          "path": "skills/github-continuity/scripts/sync_check.py",
+          "sha256": "362f959fcf5caad80d800fa50339bddb073b043deceee280918c2c2d58532ac7"
+        },
+        {
+          "path": "skills/github-continuity/tests/test_backup.py",
+          "sha256": "e40f4d306ac31dc23d8b955de9015086f43ce759c685e0bb2f903daab9636742"
+        },
+        {
+          "path": "skills/github-continuity/tests/test_context.py",
+          "sha256": "920d6aa495f5aea83d2994bcb44500405e8bf6fe2709d4abbda9b9997f2e7589"
+        },
+        {
+          "path": "skills/github-continuity/tests/test_security.py",
+          "sha256": "98063763feebb2f40e3efdd9dccb233849bc59d323214714bd59d9c35c2a0ebf"
+        },
+        {
+          "path": "skills/github-continuity/tests/test_sync_check.py",
+          "sha256": "a96b9fc9f2d7829f9a38bd111183b52f7f923dafca79e1cec37f7841a59d4336"
+        }
+      ]
+    }
+  ]
+}

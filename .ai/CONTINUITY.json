@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "repository": "jize0602/agent-skills",
+  "branch": "main",
+  "auto_sync": true,
+  "files": {
+    "entry": ".ai/START_HERE.md",
+    "project": ".ai/PROJECT_STATE.json",
+    "requirements": ".ai/REQUIREMENTS.md",
+    "implementation": ".ai/IMPLEMENTATION.md",
+    "history": ".ai/HISTORY.md",
+    "decisions": ".ai/DECISIONS.md",
+    "incidents": ".ai/INCIDENTS.md",
+    "lessons": ".ai/LESSONS.md",
+    "tasks": ".ai/OPEN_TASKS.md",
+    "tests": ".ai/TEST_STATE.md",
+    "deployment": ".ai/DEPLOYMENT_STATE.json",
+    "safety": ".ai/SAFETY_RULES.md",
+    "handoff": ".ai/HANDOFF.md",
+    "project_skill": ".ai/skills/agent-skills-project/SKILL.md",
+    "changelog": "CHANGELOG.md"
+  },
+  "test_commands": [
+    "python3 -m unittest discover -s skills/github-bootstrap/tests -v",
+    "python3 -m unittest discover -s skills/github-continuity/tests -v",
+    "python3 -m unittest discover -s tests -v",
+    "python3 skills/github-continuity/scripts/context.py validate --root .",
+    "python3 skills/github-continuity/scripts/security.py --root . --history"
+  ]
+}
