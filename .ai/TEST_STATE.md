@@ -14,6 +14,7 @@ Overall status: `V1_0_1_RELEASE_CI_CLEAN_INSTALL_PASS_FINAL_SYNC_BACKUP_PENDING`
 | Anonymous tagged README | signed-out Chrome Incognito | PASS |
 | Independent GitHub-only private-project resume | new Luna Max, 24/24 pinned remote files and 20/20 questions; private identifiers withheld | PASS |
 | `v1.0.1` release/CI/clean install | GitHub tag `4d35a73016679634b2e94e346c0b0cdd7b915800`, downloaded source | PASS |
+| New Luna Max independent Resume on `v1.0.1` | Clean pinned-tag installation, authorized Private repository read, 24/24 file hashes, 20/20 answers | PASS |
 | Final project-brain sync and first backup | separate acceptance gates | PENDING |
 
 The `v1.0.0` tagged snapshot retained stale candidate wording even though GitHub Release/CI passed; `v1.0.1` corrects it without moving the historical tag. CI and local/tagged-archive evidence are tracked separately; neither proves the pending backup.
