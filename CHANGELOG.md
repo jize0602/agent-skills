@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 release evidence (2026-09-24)
+
+- Published formal `v1.0.1` Release at `4d35a73016679634b2e94e346c0b0cdd7b915800`; exact main and tag CI passed.
+- Verified the downloaded official tag archive, manifest and clean installation of both Skills; 101 tests and source secret scan passed.
+- Kept the historical `v1.0.0` tag unchanged. Final project-brain sync and first continuity backup are tracked separately in `ACCEPTANCE.md`.
+
 ## 1.0.1 — release-status consistency
 
 - Removed transient publication and CI claims from `VERSION.json`; current status is verified from GitHub Releases and Actions.

@@ -1,6 +1,6 @@
 # Public Skills acceptance
 
-Evidence captured 2026-09-23. This file records checks available before the version `1.0.1` release, final continuity sync and backup. The current GitHub branch, CI, Release, and backup assets must be checked live; a snapshot cannot contain its own post-upload verification receipt. Historical `v1.0.0` evidence is labeled as such and never substitutes for a newer release.
+Evidence updated 2026-09-24. The current GitHub branch, CI, Release, and backup assets must still be checked live; a snapshot cannot contain its own post-upload verification receipt. Historical `v1.0.0` evidence is labeled as such and never substitutes for a newer release.
 
 | Gate | Result | Evidence |
 | --- | --- | --- |
@@ -16,7 +16,10 @@ Evidence captured 2026-09-23. This file records checks available before the vers
 | Auth/error-path fixtures | PASS_WITH_FIXTURES | 34 bootstrap tests include 401, wrong account, no integration, 403, ambiguous private 404, authoritative missing, offline, denial, and saved-intent resume for READ/SYNC/BACKUP; no real authorization was revoked |
 | Independent new Luna Max resume | PASS | A fresh Luna Max used only the public Skill repository and a separate disposable Private repository, installed both Skills from the pinned release into a clean temporary destination, verified 24/24 private repository files against its tree and answered all 20 Resume questions with private repository evidence; exact identifiers are intentionally not published |
 | Historical tagged-doc consistency | FAIL_IN_V1_0_0 | The immutable `v1.0.0` source README and `VERSION.json` said publication/CI were pending, despite the live formal Release and passing CI. Preserve that historical tag; version `1.0.1` removes transient status from `VERSION.json` and directs Agents to current GitHub Release/CI. |
-| Version 1.0.1 release / final continuity sync / exact CI / readback | PENDING | This report, static version record and project brain must be committed, pushed without force, checked against final remote HEAD, then formally tagged and installed from the new tag |
+| Version 1.0.1 formal Release | PASS | [`v1.0.1`](https://github.com/jize0602/agent-skills/releases/tag/v1.0.1), Release ID `394930627`, tag points to `4d35a73016679634b2e94e346c0b0cdd7b915800`; historical `v1.0.0` was not moved |
+| Version 1.0.1 exact-commit CI and remote readback | PASS | Main and tag CI runs [`35899902187`](https://github.com/jize0602/agent-skills/actions/runs/35899902187) and [`35900579054`](https://github.com/jize0602/agent-skills/actions/runs/35900579054) completed/success on `4d35a73016679634b2e94e346c0b0cdd7b915800`; release tag and key files were read back from GitHub |
+| Version 1.0.1 official tagged archive clean install | PASS | Downloaded GitHub ZIP SHA-256 `0da42b6c95652ea336b30da04002da3855afe862dccf23a21c71f050aab1ebe5`; manifest SHA-256 `7255e4ae65e0428140759a1b946a2dcdd036e461a30b44cee739086ebab79b8`; installed both Skills into an empty temporary destination; regenerated manifest matched, 101/101 tests and source secret scan passed |
+| Final project-brain sync / exact CI / readback | PENDING | This dated acceptance update and state documents must be committed to final remote HEAD without force, with exact-commit CI and readback before the first backup |
 | First ordinary disaster backup / restore | PENDING | Pack the final verified source; upload as distinct continuity prerelease asset, download and verify it, restore to a new directory, then verify context and tests |
 
 The downloaded tagged ZIP is a GitHub-generated source archive, not a backup or product deployment. `github-bootstrap` preserves intent and reclassifies fresh evidence after official authorization, but cannot launch an OAuth flow in an environment that offers no such integration. A browser login alone does not grant the Agent GitHub API access. No unrelated project or deployment system was modified in this task.

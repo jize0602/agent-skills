@@ -26,7 +26,7 @@ Current evidence state:
 - historical publication: Public `v1.0.0` Release at `8332b38d5f6d3fcf114bfe8e42069f37a738533b`
 - current source version/publication: inspect `VERSION.json`, the exact formal GitHub Release/tag and current GitHub Actions; do not infer from this snapshot alone
 - independent 20-question resume against a separate disposable Private project: `PASS`; exact private identifiers are not published here; see `ACCEPTANCE.md`
-- 101/101 tests, continuity contract, full-history CI secret scan, exact-commit CI: `PASS` on historical `v1.0.0` tag; newer source needs its own CI
+- 101/101 tests, continuity contract, full-history CI secret scan, exact-commit CI: `PASS` on formal `v1.0.1` tag; final project-brain evidence sync needs its own CI
 - runtime deployment: `NOT_APPLICABLE`
 
 The GitHub connection must be an authorized connector or CLI; browser sign-in alone is insufficient. If authorization is unavailable, the user completes the official flow personally and the pending intent is resumed afterward.
