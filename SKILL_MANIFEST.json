@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "repository": "jize0602/agent-skills",
-  "ref": "refs/tags/v1.0.0",
+  "ref": "refs/tags/v1.0.1",
   "skills": [
     {
       "name": "github-bootstrap",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "files": [
         {
           "path": "skills/github-bootstrap/SKILL.md",
@@ -31,7 +31,7 @@
     },
     {
       "name": "github-continuity",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "files": [
         {
           "path": "skills/github-continuity/SKILL.md",

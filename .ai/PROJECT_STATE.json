@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
   "project": "agent-skills",
-  "status": "PUBLIC_CANDIDATE_LOCAL_PASS",
+  "status": "V1_0_1_SOURCE_INTEGRATION_IN_PROGRESS",
   "repository": "jize0602/agent-skills",
   "branch": "main",
   "visibility_target": "public",
-  "remote_status": "PUBLIC_REPOSITORY_EXISTS_SOURCE_PENDING",
-  "integration_acceptance": "PENDING",
+  "remote_status": "CHECK_LIVE_GITHUB_RELEASE_AND_CI",
+  "integration_acceptance": "CHECK_ACCEPTANCE_AND_LIVE_GITHUB",
   "continuity_contract": ".ai/CONTINUITY.json",
   "skills": [
     {
       "name": "github-bootstrap",
-      "version": "1.0.0",
-      "publication_status": "CANDIDATE",
-      "test_status": "34_PASS_LOCAL"
+      "version": "1.0.1",
+      "publication_status": "CHECK_LIVE_GITHUB_RELEASE",
+      "test_status": "34_PASS_V1_0_0_BASELINE"
     },
     {
       "name": "github-continuity",
-      "version": "1.0.0",
-      "publication_status": "CANDIDATE",
-      "test_status": "61_PASS_LOCAL"
+      "version": "1.0.1",
+      "publication_status": "CHECK_LIVE_GITHUB_RELEASE",
+      "test_status": "61_PASS_V1_0_0_BASELINE"
     }
   ],
   "tracking": {
@@ -27,7 +27,7 @@
     "implementation": ".ai/IMPLEMENTATION.md"
   },
   "tests": {
-    "status": "LOCAL_PASS_REMOTE_PENDING",
+    "status": "V1_0_0_BASELINE_PASS_V1_0_1_RELEASE_CI_BACKUP_PENDING",
     "commands": [
       "python3 -m unittest discover -s skills/github-bootstrap/tests -v",
       "python3 -m unittest discover -s skills/github-continuity/tests -v",
@@ -37,5 +37,5 @@
   "deployment": {
     "status": "NOT_APPLICABLE"
   },
-  "next_action": "Publish reviewed source to the existing Public repository, verify exact CI/readback, then release, clean-install, independently resume and back up."
+  "next_action": "Publish the version 1.0.1 status-consistency update without moving v1.0.0; verify exact CI/readback and clean install, then create and restore first ordinary backup."
 }

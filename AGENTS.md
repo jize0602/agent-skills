@@ -3,7 +3,7 @@
 - Start with `.ai/START_HERE.md` and follow the role map in `.ai/CONTINUITY.json`.
 - Treat mapped files as the project brain's sources of truth. Update the relevant records when a task changes facts; do not duplicate or invent evidence.
 - This is a public skills project. Do not add private project facts, customer data, credentials, or unrelated source code.
-- Both public skills (`github-bootstrap` and `github-continuity`) are versioned `1.0.0`; formal Release and remote verification remain pending until supported by evidence.
+- Both public skills (`github-bootstrap` and `github-continuity`) use the versions in `VERSION.json`. Check the current formal GitHub Release and exact-commit CI, then [`ACCEPTANCE.md`](ACCEPTANCE.md), before claiming integration acceptance. Never infer live publication state from a tagged source snapshot alone.
 - `.ai/CONTINUITY.json` records the requested automatic, scoped continuity sync. It does not authorize deployment or credential handling. Use only the official GitHub connector or CLI after it is actually authorized.
 - A browser sign-in is not proof that the agent's GitHub connector or CLI is authorized. If official access is missing, the user completes that authorization personally. Preserve the pending sync intent and resume after access is available.
 - Record tests, manifest checks, secret scans, publication, and remote state with their actual local/remote scope. Never pre-fill a success result.

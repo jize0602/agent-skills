@@ -30,8 +30,8 @@ jobs:
       - name: Verify release manifest and SHA-256 file hashes
         run: |
           manifest_dir="$(mktemp -d)"
-          python scripts/release_manifest.py --repo-root . --ref refs/tags/v1.0.0 --output "$manifest_dir/generated.json"
+          python scripts/release_manifest.py --repo-root . --ref refs/tags/v1.0.1 --output "$manifest_dir/generated.json"
           cmp SKILL_MANIFEST.json "$manifest_dir/generated.json"
-          python skills/github-bootstrap/scripts/install.py --repo-root . --manifest SKILL_MANIFEST.json --expected-ref refs/tags/v1.0.0 --dest "$manifest_dir/installed"
+          python skills/github-bootstrap/scripts/install.py --repo-root . --manifest SKILL_MANIFEST.json --expected-ref refs/tags/v1.0.1 --dest "$manifest_dir/installed"
       - name: Scan full Git history for secrets
         run: python skills/github-continuity/scripts/security.py --root . --history

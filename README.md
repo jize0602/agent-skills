@@ -10,7 +10,7 @@ From a new Agent, say: `从 jize0602 的公共 Skill 仓库安装 github-continu
 备份至github <项目名>
 ```
 
-> **Release state:** the GitHub repository is Public (ID `1383044358`); initial commit `380fca3bf495c4739a2ffff6ac483f507ad9fc60` was read back. This `1.0.0` candidate has 101 passing local unit tests and a valid local continuity contract. Formal Release, public CI, remote clean install and independent resume remain pending; inspect GitHub's latest commit and Release for current status.
+> **Release check:** this repository's source files are snapshots, not live publication status. Select the [latest formal GitHub Release](https://github.com/jize0602/agent-skills/releases), resolve its tag to a commit, and require that commit's successful CI before installing. `VERSION.json` records Skill versions only; [`ACCEPTANCE.md`](ACCEPTANCE.md) records dated evidence, while current GitHub Releases and Actions decide current status.
 
 ## Skills
 
