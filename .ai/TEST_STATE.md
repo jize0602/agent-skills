@@ -1,6 +1,6 @@
 # Test State
 
-Overall status: `V1_0_1_RELEASE_CI_CLEAN_INSTALL_PASS_FINAL_SYNC_BACKUP_PENDING` as of 2026-09-24. See [`ACCEPTANCE.md`](../ACCEPTANCE.md) for exact remote evidence. Check final source commit separately after this document is synced.
+Overall status: `V1_0_1_RELEASE_INSTALL_RESUME_BACKUP_RESTORE_PASS` as of 2026-09-24. See [`ACCEPTANCE.md`](../ACCEPTANCE.md) for exact remote evidence. Check this final status commit and its CI separately after sync.
 
 | Check | Command | Status |
 | --- | --- | --- |
@@ -15,6 +15,8 @@ Overall status: `V1_0_1_RELEASE_CI_CLEAN_INSTALL_PASS_FINAL_SYNC_BACKUP_PENDING`
 | Independent GitHub-only private-project resume | new Luna Max, 24/24 pinned remote files and 20/20 questions; private identifiers withheld | PASS |
 | `v1.0.1` release/CI/clean install | GitHub tag `4d35a73016679634b2e94e346c0b0cdd7b915800`, downloaded source | PASS |
 | New Luna Max independent Resume on `v1.0.1` | Clean pinned-tag installation, authorized Private repository read, 24/24 file hashes, 20/20 answers | PASS |
-| Final project-brain sync and first backup | separate acceptance gates | PENDING |
+| Pre-backup source sync / exact CI / remote readback | `ceeb449e2874dced585611c34c4fd1d01b90d9ea` / CI `35910020662` | PASS |
+| First ordinary GitHub backup / download / SHA / manifest / restore | Release `continuity-backup-20260923-232830`, 43 files, restored 101/101 tests | PASS |
+| Final status-document sync | verify live GitHub HEAD and exact-commit CI after this document is pushed | CHECK_LIVE |
 
-The `v1.0.0` tagged snapshot retained stale candidate wording even though GitHub Release/CI passed; `v1.0.1` corrects it without moving the historical tag. CI and local/tagged-archive evidence are tracked separately; neither proves the pending backup.
+The `v1.0.0` tagged snapshot retained stale candidate wording even though GitHub Release/CI passed; `v1.0.1` corrects it without moving the historical tag. The ordinary backup is a distinct prerelease asset pinned to the pre-status-update source commit, not the formal Skill Release or a production deployment.

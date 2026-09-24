@@ -6,4 +6,4 @@
 - [x] Run a new Luna Max with no chat/local-history context to recover a separate disposable Private project from GitHub only (20/20 PASS, 24/24 pinned file readback; private identifiers withheld).
 - [x] Exercise official-auth negative fixtures and confirm no ambiguous 404 can create a same-name repository; no real permission revocation was performed.
 - [x] Publish version `1.0.1` to correct stale tagged status wording without rewriting `v1.0.0`; verify CI and fresh clean install.
-- [ ] Finish remote acceptance evidence and make the first verified disaster backup; keep formal Release separate.
+- [x] Finish remote backup acceptance and make the first verified disaster backup; keep formal Release separate.

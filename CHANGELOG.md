@@ -4,6 +4,7 @@
 
 - Published formal `v1.0.1` Release at `4d35a73016679634b2e94e346c0b0cdd7b915800`; exact main and tag CI passed.
 - Verified the downloaded official tag archive, manifest and clean installation of both Skills; 101 tests and source secret scan passed.
+- Published the first ordinary continuity backup as a separate prerelease asset, then downloaded its ZIP/checksum, verified SHA-256 and 43-file manifest, and restored it with 101 tests passing.
 - Kept the historical `v1.0.0` tag unchanged. Final project-brain sync and first continuity backup are tracked separately in `ACCEPTANCE.md`.
 
 ## 1.0.1 — release-status consistency

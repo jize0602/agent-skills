@@ -3,13 +3,13 @@
   "status": "NOT_APPLICABLE",
   "test": "NOT_APPLICABLE",
   "production": "NOT_APPLICABLE",
-  "last_verified": "2026-09-23",
+  "last_verified": "2026-09-24",
   "publication": {
     "target": "jize0602/agent-skills",
     "visibility_requested": "public",
-    "status": "PUBLIC_RELEASE_V1_0_0",
-    "remote_status": "TAG_8332b38d5f6d3fcf114bfe8e42069f37a738533b_CI_PASS",
-    "integration_acceptance": "PENDING"
+    "status": "PUBLIC_RELEASE_V1_0_1_AND_ORDINARY_BACKUP_VERIFIED",
+    "remote_status": "TAG_4d35a73016679634b2e94e346c0b0cdd7b915800_CI_PASS_BACKUP_SOURCE_ceeb449e2874dced585611c34c4fd1d01b90d9ea",
+    "integration_acceptance": "FINAL_STATUS_COMMIT_CHECK_LIVE"
   },
-  "note": "This is a source-only Skills repository; no runtime deployment was performed or authorized. Formal v1.0.0 Skill release is public; continuity backup is a distinct artifact."
+  "note": "This is a source-only Skills repository; no runtime deployment was performed or authorized. Formal v1.0.1 Skill release is public; the verified continuity backup is a distinct ordinary prerelease asset."
 }

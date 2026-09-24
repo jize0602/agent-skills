@@ -27,6 +27,7 @@ Current evidence state:
 - current source version/publication: inspect `VERSION.json`, the exact formal GitHub Release/tag and current GitHub Actions; do not infer from this snapshot alone
 - independent 20-question resume against a separate disposable Private project: `PASS`; exact private identifiers are not published here; see `ACCEPTANCE.md`
 - 101/101 tests, continuity contract, full-history CI secret scan, exact-commit CI: `PASS` on formal `v1.0.1` tag; final project-brain evidence sync needs its own CI
+- first ordinary disaster backup: [separate continuity prerelease](https://github.com/jize0602/agent-skills/releases/tag/continuity-backup-20260923-232830), downloaded and restored from source commit `ceeb449e2874dced585611c34c4fd1d01b90d9ea`; it predates this post-verification status update
 - runtime deployment: `NOT_APPLICABLE`
 
 The GitHub connection must be an authorized connector or CLI; browser sign-in alone is insufficient. If authorization is unavailable, the user completes the official flow personally and the pending intent is resumed afterward.
